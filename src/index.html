@@ -4,13 +4,14 @@
     <title>Personal Notes</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="/script.js"></script>
+    <script src="src/script.js"></script>
     <!-- <link href="css/style.css" rel="stylesheet" /> -->
   </head>
   <body>
     <h1>Notes</h1>
-    <button type="button" onclick="addNote()">Add Note</button>
-    <button type="button" onclick="removeNote()">Delete Note</button>
-    <button type="button" onclick="changeTitle()">Update Note</button>
+    <button type="button" onclick="addNewNote()">Add Note</button>
+    <button type="button" onclick="changeNoteTitle()">Update Note</button>
+    <button type="button" onclick="changeTitle()">Delete Note</button>
+    <ul id="notelist"></ul>
   </body>
 </html>

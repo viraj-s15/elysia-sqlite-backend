@@ -9,6 +9,7 @@ new Elysia()
   .get("/script.js", () => Bun.file("script.js").text())
   .get("/notes", ({ db }) => db.getAllNotes())
   .post(
+    "/notes",
     async ({ db, body }) => {
       console.log(body);
       const id = (await db.addNote(body)).id;
