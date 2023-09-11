@@ -1,5 +1,8 @@
 # bun-sqlite-backend
 
+Wanted to try out bun as it looked cool, this is just a simple notes
+app implemented in bun and elysia
+
 To install dependencies:
 
 ```bash
