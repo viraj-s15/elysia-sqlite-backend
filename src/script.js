@@ -1,6 +1,6 @@
 window.addEventListener(
   "DOMContentLoaded",
-  function () {
+  function() {
     fetch("/notes", {
       method: "GET",
       headers: {

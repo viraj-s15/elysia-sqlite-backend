@@ -9,7 +9,7 @@ export interface Note {
 export class NotesDb {
   private db: Database;
   constructor() {
-    this.db = new Database("notes.sqlite");
+    this.db = new Database("notes.db");
 
     this.init()
       .then(() => console.log("Database Init"))

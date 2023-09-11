@@ -1,8 +1,8 @@
 import { Elysia, t } from "elysia";
 import { html } from "@elysiajs/html";
-import { NotesDb } from "../db";
+import { NotesDb } from "../db.js";
 
-new Elysia()
+const app = new Elysia()
   .use(html())
   .decorate("db", new NotesDb())
   .get("/", () => Bun.file("index.html").text)
@@ -44,7 +44,6 @@ new Elysia()
       },
     },
   )
-
   .delete("/notes/:id", ({ db, params }) => {
     try {
       db.removeNote(parseInt(params.id));
@@ -54,4 +53,4 @@ new Elysia()
     }
   })
 
-  .listen(8000);
+  .listen(3000);
